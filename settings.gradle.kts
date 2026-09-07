@@ -25,3 +25,4 @@ dependencyResolutionManagement {
 
 rootProject.name = "NotNow"
 include(":app")
+include(":domain")
