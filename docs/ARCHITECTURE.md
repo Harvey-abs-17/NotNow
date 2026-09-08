@@ -105,6 +105,8 @@ Initial concepts include:
 - `ReminderScheduler`
 - notification capture, reminder creation, completion, rescheduling, observation, and reboot-recovery use cases
 
+A `Reminder` keeps the source notification identifier for traceability and also owns a copy of the source app name, package name, title, and body. This keeps reminders useful after their originating inbox snapshot is removed and prevents the snapshot lifecycle from controlling the reminder lifecycle.
+
 Use cases are created for meaningful application behavior. The project does not add pass-through use cases merely to satisfy a naming pattern.
 
 ### `:data`
