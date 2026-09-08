@@ -236,7 +236,7 @@ Past-due reminder → mark Overdue and notify
 ```
 
 - The app declares `RECEIVE_BOOT_COMPLETED` and handles the system broadcast without opening foreground UI.
-- Only active reminders are considered; Completed and Cancelled reminders are ignored.
+- Only active reminders are considered; Completed reminders are ignored.
 - Future reminders are scheduled again.
 - Past-due reminders become Overdue and are delivered immediately or at the first reasonable opportunity.
 - Recovery is idempotent and must not create duplicate alarms or reminder notifications.
