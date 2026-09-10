@@ -4,6 +4,6 @@ import com.hadi.abbasi.notnow.domain.model.Reminder
 import com.hadi.abbasi.notnow.domain.model.ReminderId
 
 interface ReminderScheduler {
-    fun schedule(reminder: Reminder): Result<Unit>
-    fun cancel(reminderId: ReminderId): Result<Unit>
+    fun schedule(reminder: Reminder)
+    fun cancel(reminderId: ReminderId)
 }
